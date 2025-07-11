@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/uSErNAmEB1/docker-jenkins.git'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
